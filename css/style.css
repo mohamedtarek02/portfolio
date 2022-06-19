@@ -1,0 +1,1192 @@
+/*start main rules*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  perspective: 1000px;
+}
+
+p,
+q,
+span {
+  color: rgb(126, 123, 123);
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 2px;
+  color: white;
+}
+
+::selection {
+  background-color: blueviolet;
+}
+
+.clear {
+  clear: both;
+}
+
+i {
+  color: rgb(253, 251, 251);
+}
+
+.container {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+/* end of main rules*/
+/*start of header*/
+header {
+  height: 565px;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../images/headd4.gif");
+  background-size: cover;
+  text-align: center;
+}
+
+header h2 {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  font-size: 60px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+header .head {
+  margin-top: 250px;
+}
+
+header button {
+  background: none;
+  width: 140px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 12px;
+}
+
+@media (min-width: 0px) and (max-width: 1199px) {
+  header h2 {
+    width: 90%;
+    padding: 7px 0;
+    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  header h2 {
+    width: 70%;
+    padding: 5px 0;
+  }
+}
+/*end of header*/
+/*start of nav*/
+nav {
+  background-color: rgb(128, 4, 86);
+  color: white;
+  overflow: hidden;
+  height: 60px;
+}
+
+nav h4 {
+  float: left;
+  display: inline;
+  padding-top: 15px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0px;
+  overflow: hidden;
+  float: right;
+}
+
+nav h4 span {
+  color: blueviolet;
+}
+
+nav ul li {
+  float: left;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 5px;
+}
+
+nav ul li a:hover,
+nav ul .active {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  nav {
+    height: 120px;
+  }
+
+  nav h4 {
+    text-align: center !important ;
+  }
+
+  nav ul {
+    margin-left: -10px;
+  }
+
+  nav span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  nav h4 {
+    padding-top: 12px;
+  }
+
+  nav span {
+    font-size: 20px;
+  }
+}
+/*end of nav*/
+/*start of first article (fratures) */
+.features {
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.features .feat h2 {
+  color: blueviolet;
+}
+
+.features .feat p {
+  line-height: 1.7;
+  margin-right: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .features .feat {
+    float: none;
+    margin-right: 1%;
+  }
+
+  .features .feat h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .features .feat p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .features .feat {
+    float: left;
+    width: 32.33333%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+  }
+}
+/*end of first article (fratures) */
+/*start of second article (about) */
+.about {
+  background-color: rgb(15, 15, 15);
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.about .inf h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about .inf .qual {
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.about .inf .qual .icon {
+  float: left;
+  width: 6%;
+  box-sizing: border-box;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.about .inf .qual .text {
+  float: left;
+  width: 34%;
+  box-sizing: border-box;
+  min-height: 110px;
+  margin-right: 6%;
+  margin-bottom: 6px;
+}
+
+.about .inf .qual .icon img {
+  width: 100%;
+}
+
+.about .inf .qual div span {
+  line-height: 1.5;
+}
+
+.about .inf p {
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .about .image {
+    float: none;
+  }
+
+  .about .image img {
+    width: 100%;
+  }
+
+  .about .inf {
+    float: none;
+    width: 100%;
+  }
+
+  .about .inf h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .hidden-sm {
+    display: none;
+  }
+
+  .about .inf {
+    float: none;
+    width: 100%;
+  }
+
+  .about .inf h2 {
+    text-align: center;
+  }
+
+  .about .inf .qual .icon {
+    float: left;
+    width: 8%;
+    box-sizing: border-box;
+    margin-right: 2%;
+    margin-top: 6%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about .image {
+    float: left;
+    width: 40%;
+    background-size: cover;
+    margin-bottom: 0px;
+  }
+
+  .about .inf {
+    float: left;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .image {
+    float: left;
+    width: 40%;
+    background-size: cover;
+    margin-bottom: 0px;
+  }
+
+  .about .inf {
+    float: left;
+    width: 60%;
+  }
+}
+/*end of second article (about) */
+/*start of third article (skills)*/
+.my-skills {
+  padding: 50px 0;
+}
+
+.my-skills .skills {
+  box-sizing: border-box;
+  padding-right: 30px;
+}
+
+.my-skills .skills button {
+  background: none;
+  width: 140px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: 1px solid blueviolet;
+  padding: 10px;
+}
+.my-skills .progress .percent h3 {
+  margin-bottom: 12px;
+}
+
+.my-skills .progress .percent div {
+  background-color: grey;
+  height: 30px;
+  width: 100%;
+  line-height: 25px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.my-skills .progress .percent span {
+  background-color: blueviolet;
+  height: 30px;
+  display: block;
+  color: white;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .skills {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .progress {
+    float: none;
+    margin-top: 10px;
+  }
+
+  .my-skills .skills .hidden-sm {
+    display: none;
+  }
+
+  .my-skills .progress .percent div {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .my-skills .progress .percent span {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills {
+    float: left;
+    width: 50%;
+  }
+
+  .progress {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+  }
+}
+/*end of third article (skills)*/
+/*start of forth article (resume)*/
+.resume {
+  background-color: rgb(15, 15, 15);
+  text-align: center;
+  padding: 50px 0;
+}
+
+.resume button {
+  background: none;
+  width: 160px;
+  margin-top: 30px;
+  font-size: 16px;
+  border: 1px solid blueviolet;
+  padding: 10px;
+}
+/*end of forth article (resume)*/
+/*start of fifth article (education)*/
+.my-education {
+  padding: 50px 0;
+}
+
+.my-education .exp .hd,
+.my-education .exp .digital {
+  margin-top: 40px;
+}
+
+.my-education .exp h3 {
+  margin-bottom: -5px;
+}
+
+.my-education .exp hr {
+  background-color: rgb(43, 43, 43);
+  opacity: 0.3;
+  margin: 10px 0 5px 0;
+}
+
+.my-education .exp button {
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
+  border-radius: 0px;
+  padding: 5px;
+  margin-top: -15px;
+}
+@media (max-width: 767px) {
+  .my-education .main {
+    float: none;
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .my-education .exp {
+    float: none;
+    width: 100%;
+  }
+
+  .my-education .exp button {
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .my-education .main {
+    float: none;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .my-education .exp {
+    float: none;
+    width: 100%;
+  }
+
+  .my-education .exp .graphic {
+    position: relative;
+  }
+
+  .my-education .exp .graphic button {
+    top: 25px;
+    left: 551px;
+  }
+
+  .my-education .exp .digital {
+    position: relative;
+    padding: 25px 0;
+  }
+
+  .my-education .exp .digital button {
+    top: 93px;
+    left: 585px;
+  }
+
+  .my-education .exp .hd {
+    position: relative;
+  }
+
+  .my-education .exp .hd button {
+    top: 25px;
+    left: 666px;
+  }
+
+  .my-education .exp button {
+    padding: 12px;
+    border-radius: 3px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) {
+  .my-education .main {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .my-education .exp {
+    float: left;
+    width: 50%;
+    text-align: left;
+  }
+}
+/*end of fifth article (education)*/
+/*start of sixth article (work exp)*/
+.work-exp {
+  padding: 50px 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: rgb(15, 15, 15);
+}
+.work-exp .exp .hd,
+.my-education .exp .digital {
+  margin-top: 40px;
+}
+
+.work-exp .exp h3 {
+  margin-bottom: -5px;
+}
+
+.work-exp .exp button {
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: -15px;
+}
+
+.work-exp .exp .digital {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.work-exp .exp hr {
+  background-color: rgb(43, 43, 43);
+  opacity: 0.3;
+  margin: 10px 0 5px 0;
+}
+
+@media (max-width: 767px) {
+  .work-exp .main {
+    float: none;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .work-exp .exp {
+    float: none;
+    width: 100%;
+  }
+
+  .work-exp .exp button {
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .work-exp .main {
+    float: none;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .work-exp .exp {
+    float: none;
+    width: 100%;
+  }
+
+  .work-exp .exp .graphic {
+    position: relative;
+    padding: 25px 0;
+  }
+
+  .work-exp .exp .graphic button {
+    top: 90px;
+    left: 645px;
+  }
+
+  .work-exp .exp .digital {
+    position: relative;
+    padding: 25px 0;
+  }
+
+  .work-exp .exp .digital button {
+    top: 93px;
+    left: 620px;
+  }
+
+  .work-exp .exp button {
+    padding: 12px;
+    border-radius: 3px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .work-exp .main {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .work-exp .exp {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .work-exp .main {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+  .work-exp .exp {
+    float: right;
+    width: 50%;
+  }
+}
+/*end of sixth article (work exp)*/
+/*start of seventh article (review)*/
+.review {
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.review h2 {
+  margin: -10px 0px 50px;
+}
+
+.review .reviews {
+  height: 100px;
+  margin-left: -30px;
+}
+
+.review .reviews div {
+  position: absolute;
+  opacity: 0;
+}
+
+.review .reviews div.active {
+  opacity: 1;
+}
+
+.review q {
+  font-style: italic;
+}
+
+.review ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0px;
+  margin-top: 30px;
+}
+
+.review ul li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid blueviolet;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.review ul .active,
+.review ul :hover {
+  background-color: blueviolet;
+}
+
+@media (max-width: 767px) {
+  .review .reviews {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .review .reviews {
+    width: 100%;
+    height: 130px;
+    text-align: left;
+  }
+
+  .review ul {
+    margin-top: 50px;
+  }
+
+  .review ul li {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .review .reviews {
+    width: 100%;
+  }
+}
+/*end of forth article (review)*/
+/*start of portoflio*/
+.portfolio {
+  padding: 50px 0;
+  padding-top: 15px;
+  background-color: rgb(15, 15, 15);
+}
+
+.portfolio h2 {
+  margin: 15px 0 30px 0;
+}
+
+.portfolio p {
+  padding: 10px 0;
+}
+
+.portfolio h2,
+.portfolio p {
+  text-align: center;
+}
+
+.portfolio .our-work {
+  overflow: hidden;
+}
+
+.portfolio .our-work div img {
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+}
+
+.portfolio .our-work div img:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 767px) {
+  .our-work div {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .portfolio .our-work div img {
+    width: 100%;
+    margin: 0px 2px 13px 2px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-work div {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .portfolio .our-work div img {
+    width: 94%;
+    margin: 0px 2px 10px 2px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-work div {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .portfolio .our-work div img {
+    width: 94%;
+    margin: 0px 2px 10px 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-work div {
+    width: 33%;
+    margin-bottom: 15px;
+  }
+
+  .portfolio .our-work div img {
+    width: 92%;
+    margin: 5px;
+  }
+}
+/*end of portoflio*/
+/*start of contact me*/
+.contact {
+  padding: 20px 0 40px;
+}
+
+.contact .inf p {
+  text-align: justify;
+  box-sizing: border-box;
+  padding-right: 30px;
+}
+
+input:focus::placeholder {
+  opacity: 0.3;
+}
+
+textarea:focus::placeholder {
+  opacity: 0.3;
+}
+/*start of the icons*/
+.contact .inf .mail-icon {
+  margin: 3px 9px 10px 4px;
+  font-size: 19px;
+}
+.contact .inf .phone-icon {
+  margin: 5px 1px 8px -1px;
+  font-size: 23px;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  width: 300px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons a i {
+  font-size: 20px;
+  color: white;
+  margin: 40px 1px 10px 1px;
+  background-color: rgb(58, 57, 57);
+  padding: 10px;
+  border-radius: 5px;
+  position: static !important;
+  overflow: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.face-icon:hover {
+  color: #4267b2;
+}
+
+.instgram-icon:hover {
+  color: #c80035;
+}
+
+.twitter-icon:hover {
+  color: #187ebc;
+}
+
+.youtube-icon:hover {
+  color: red;
+}
+/*start of social*/
+/* .contact .inf .social {   
+    width: 80px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin-top: 30px ;
+}   
+
+.contact .inf .social .twitter {margin-top: -30px;}
+
+.contact .inf .social .youtube{margin-top: -30px;}
+
+.box {
+    line-height: 30px;
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.social a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    line-height: 30px;
+    top: -30px;
+    left: 0px;
+    z-index: 1;
+    transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+}
+
+.social .facebook:hover a,
+.social .twitter:hover a,
+.social .youtube:hover a  {left: 80px;}
+
+.contact .inf .facebook .box {background-color: blue;}
+
+.contact .inf .twitter .box {background-color: #187ebc;}
+
+.contact .inf .youtube .box {background-color: red;} */
+/*the end of social*/
+.contact .button button {
+  background: none;
+  width: 140px;
+  font-size: 18px;
+  border: 1px solid blueviolet;
+  padding: 9px;
+  margin-top: 123px;
+}
+
+.contact .form h2 {
+  margin-bottom: 1px !important;
+  padding-left: 2px;
+  color: white !important;
+}
+.form span.warning {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #cd2d2d;
+  line-height: 20px;
+  padding: 3px 8px;
+  display: inline-block;
+  height: 20px;
+  margin-bottom: 12px;
+  margin-left: 15px ;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: relative;
+  visibility: hidden;
+}
+.form span.warning::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #cd2d2d transparent transparent;
+  position: absolute;
+  bottom: -23px;
+  left: 7px;
+}
+.form span.warning i {
+  line-height: 19px;
+    font-size: 14px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #161616;
+}
+
+.contact .form .form1 textarea {
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  background: none;
+  padding: 14px 16px;
+  line-height: 1.4;
+  width: 72%;
+}
+
+.contact .form .form1 span {
+  margin-left: 5px;
+  color: white;
+}
+
+.contact .form .form1 button {
+  background: none;
+  width: 140px;
+  font-size: 18px;
+  border: 1px solid blueviolet;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .contact .inf {
+    width: 100% !important;
+  }
+
+
+
+  .contact .form {
+    width: 100% !important;
+  }
+
+  .contact .form .form1 input {
+    height: 60px;
+    width: 90%;
+    font-size: 25px;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    background: none !important;
+    padding: 16px 14px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  input:-webkit-autofill { 
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+ 
+
+  .contact .form .form1 textarea {
+    font-size: 25px;
+    width: 90%;
+    height: 300px;
+  }
+
+  .contact .form .form1 button {
+    padding: 20px;
+    margin: 30px 0;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact .form,
+  .contact .inf {
+    float: left;
+    width: 50%;
+  }
+
+  .contact .form .form1 input {
+    height: 22px;
+    width: 72%;
+    font-size: 3px;
+    font-size: 17px;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    background: none;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+  }
+}
+/*end of contact me */
+/* start of footer*/
+footer {
+  background-color: rgb(128, 4, 86);
+  height: 40px;
+}
+footer div {
+  position: relative;
+}
+
+footer div p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+  line-height: 40px;
+  color: white;
+  /* position: absolute;
+    left: 458px;
+    top: -7px; */
+}
+footer i {
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  margin: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+}
+.facei {
+  right: 100px;
+}
+.facei:hover {
+  color: #4267b2;
+}
+.instgrami {
+  right: 75px;
+}
+.instgrami:hover {
+  color: #c80035;
+}
+.twitteri {
+  right: 48px;
+}
+.twitteri:hover {
+  color: #187ebc;
+}
+.youtubei {
+  right: 18px;
+}
+.youtubei:hover {
+  color: red;
+}
+/* end of footer*/
+/*start of media*/
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 45px;
+  }
+
+  p,
+  span {
+    font-size: 30px;
+  }
+
+  h2 {
+    color: blueviolet;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) {
+}
+/*end of media*/
+/*start of frame work*/
+.float-le {
+  float: left;
+}
+/*end of frame work*/
